@@ -86,6 +86,32 @@
           }
         }
       }
+    },
+    "shared-ui-kit": {
+      "projectType": "library",
+      "root": "projects/shared-ui-kit",
+      "sourceRoot": "projects/shared-ui-kit/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/shared-ui-kit/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/shared-ui-kit/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/shared-ui-kit/tsconfig.spec.json"
+          }
+        }
+      }
     }
   }
 }

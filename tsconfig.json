@@ -11,6 +11,11 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
+    "paths": {
+      "@shared-ui-kit": [
+        "./dist/shared-ui-kit"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve"
@@ -29,6 +34,12 @@
     },
     {
       "path": "./projects/shell/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/shared-ui-kit/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/shared-ui-kit/tsconfig.spec.json"
     }
   ]
 }
